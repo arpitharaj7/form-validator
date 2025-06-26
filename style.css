@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #afa8a1;
+  font-family:'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #908c81;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  overflow: hidden;
+  box-shadow: #74b774;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin-bottom: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #060606;
+  font-weight: bold;
+}
+
+input {
+  border: 2px solid #bbb29a;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  transition: border-color 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input:focus {
+  outline: none;
+  border-color: #738693;
+}
+
+small {
+  visibility: hidden;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+button {
+  cursor: pointer;
+  background: #626862;
+  border: none;
+  color: rgb(0, 0, 0);
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  width: 100%;
+  transition: background-color 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+  background-color: #7a8b7b;
+}
+
+.form-group.error input {
+  border-color: #e74c3c;
+}
+
+.form-group.success input {
+  border-color: #2ecc71;
+}
+
+.form-group.error small {
+  visibility: visible;
+  color: #a94d43;
+
+  .input-icon-wrapper {
+  position: relative;
+}
+
+.input-icon-wrapper input {
+  padding-right: 30px;
+}
+
+#match-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+#match-icon.valid {
+  color: #2ecc71; 
+}
+
+#match-icon.invalid {
+  color: #e74c3c; 
+}
+}
+
