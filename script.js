@@ -12,7 +12,7 @@ form.addEventListener("submit", function (e) {
   let isFormValid = isRequiredValid;
 
   if (isRequiredValid) {
-    const isUsernameValid = checkLength(username, 3, 15);
+    const isUsernameValid = checkLength(username, 3, 20);
     const isEmailValid = checkEmail(email);
     const isPasswordValid = checkLength(password, 6, 25);
     const isPasswordsMatch = checkPasswordsMatch(password, confirmPassword);
