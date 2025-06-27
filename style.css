@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #afa8a1;
+  background-color: #b7b7b7;
   font-family:'Times New Roman', Times, serif;
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@ small {
 
 button {
   cursor: pointer;
-  background: #626862;
+  background: #566a57;
   border: none;
   color: rgb(0, 0, 0);
   display: block;
@@ -85,7 +85,7 @@ button {
 }
 
 button:hover {
-  background-color: #7a8b7b;
+  background-color: #626862;#4f6650
 }
 
 .form-group.error input {
